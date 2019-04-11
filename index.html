@@ -7,22 +7,23 @@
 		</style>
 	</head>
 	<body>
-		<a class="clickable">I'm clickable</a>
+		<a href="#" class="clickable">I'm clickable</a>
 
-	<script type="text/javascript">
-		(function () {
-			var link = document.querySelector('.clickable');
-			link.addEventListener('click', function (e) {
-				e.preventDefault();
-				alert('clicked');
-			})
-		})()
-	</script>
+		<script type="text/javascript">
+			(function () {
+				var link = document.querySelector('.clickable');
+				link.addEventListener('click', function (e) {
+					e.preventDefault();
+					alert('clicked');
+				})
+			})()
+		</script>
+	
 		<!-- begin SnapEngage code -->
 		<script type="text/javascript">
 			(function() {
 				var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
-				se.src = '//storage.googleapis.com/code.snapengage.com/js/48fb9dfa-70a5-46f9-8732-ec9e10bb8166.js';
+				se.src = '//storage.googleapis.com/code.snapengage.com/js/timzon-snapabug-widget.js';
 				var done = false;
 				se.onload = se.onreadystatechange = function() {
 					if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
